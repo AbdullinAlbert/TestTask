@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dollar Exchange Rate</string>
+    <string name="network_error">"Отсутствует интернет-соединение"</string>
+    <string name="notifier_about_height_dollar_exchange_rate">Уведомление о повышении курса доллара</string>
+    <string name="height_dollar_exchange_rate_id">height_dollar_exchange_rate_id</string>
+    <string name="dollar_exchange_rate_is_up_on">Курс доллара вырос на %1$s</string>
+    <string name="for_now_its_cost_is">На данный момент его стоимость составляет: %1$s</string>
+</resources>
