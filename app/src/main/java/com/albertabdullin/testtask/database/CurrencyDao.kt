@@ -9,7 +9,7 @@ import androidx.room.Query
 @Dao
 interface CurrencyDao {
     @Query("SELECT * FROM currency ORDER BY id DESC")
-    suspend fun getAllData(): List<CurrencyEntity>
+    fun getAllData(): LiveData<List<CurrencyEntity>>
 
     @Query("SELECT * FROM currency ORDER BY id DESC LIMIT 1")
     suspend fun getRecentValueOfExchangeRate(): CurrencyEntity

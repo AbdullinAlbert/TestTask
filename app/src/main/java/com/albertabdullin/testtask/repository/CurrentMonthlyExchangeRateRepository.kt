@@ -19,8 +19,7 @@ class CurrentMonthlyExchangeRateRepository(private val context: Context) {
     private val dollarRateService = DollarRateAPI.dollarRateService
 
     private val _listOfExchangeRate = liveData {
-        val list = dataBase.getAllData()
-        emit(list)
+        emitSource(dataBase.getAllData())
     }
 
     val listOfExchangeRate: LiveData<List<CurrencyEntity>>
