@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         }
         createNotificationChannel()
     }
-    //some text for test
+    //some text for test #2
     private fun createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val name = getString(R.string.notifier_about_height_dollar_exchange_rate)
